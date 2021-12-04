@@ -14,10 +14,17 @@ class Day3Spec extends Specification {
 
     void "Part1"() {
         when:
-        Integer result = systemUnderTest.process()
+        Integer result = systemUnderTest.processPowerConsumption()
 
         then:
         result == 1082324
     }
 
+    void "Part2"() {
+        when:
+        int result = systemUnderTest.processLifeSupportRating()
+
+        then:
+        result == 1353024
+    }
 }
